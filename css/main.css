@@ -1,0 +1,1297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding-inline: 90px;
+    padding-block: 30px;
+    position: fixed;
+    z-index: 999;
+    opacity: 1;
+}
+
+.navbar .logo {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+
+}
+
+.navbar .logo a {
+    color: #000;
+
+}
+
+.navbar .logo span {
+    color: red;
+}
+
+.navbar .list {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+
+}
+
+.navbar .list ul li  {
+    color: #000;
+    padding-block: 7px;
+    
+    
+}
+.navbar .list ul li a  {
+  color: #000;
+}
+
+.navbar .list ul li {
+    display: inline-block;
+    padding-inline: 20px;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.navbar .icon button {
+    padding: 12px 12px;
+    background-color: #fff;
+    border: none;
+}
+
+.navbar .menu {
+    display: none;
+}
+
+
+
+
+
+
+
+#home {
+
+padding-top: 70px;
+    /* display: flex;
+
+    justify-content: space-around;
+    align-items: center; */
+    background-color: #EEEEEE;
+
+}
+
+#home .container {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home .home-caption {
+    width: 50%;
+
+
+
+}
+
+#home .home-caption h2 {
+    font-weight: 700;
+    font-size: 65px;
+    font-family: 'Amatic SC', sans-serif;
+}
+
+#home .home-caption p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    padding: 20px 0px;
+
+}
+
+#home .home-caption .but {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+    position: relative;
+}
+#home .home-caption .bt2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1s;
+}
+#home .home-caption .bt2 i{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: black;
+    margin-right: 10px;
+}
+
+#home .home-caption .bt2 .icon{
+    position: relative;
+}
+#home .home-caption .bt2 .icon::after {
+    content: "";
+    width: 20px;
+    height: 40px;
+    BACKGROUND-COLOR:RED;
+    border-radius: 100% 0 0 100%/50% 0 0 50%;
+    z-index: 1;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    margin-right: 10px;
+}
+#home .home-caption .bt2 i::before{
+z-index: 3;
+}
+
+
+#home .home-caption .but .bt1 {
+    padding: 15px 28px;
+    background-color: #E61414;
+    color: #fff;
+    border-radius: 20px;
+    border: #E61414;
+    border-top-left-radius: 1px;
+    transition: 1s;
+}
+
+#home .home-caption .but .bt1:hover {
+    background-color: #505050;
+}
+#home .home-caption .but .bt2:hover {
+    color:#E61414;
+}
+
+
+
+
+
+
+#home .home-image {
+    width: 40%;
+    padding-block: 50px;
+
+
+}
+
+#home .home-image img {
+    width: 100%;
+}
+
+#home .home-image:hover {
+    animation: move-plate .5s infinite
+}
+
+
+@keyframes move-plate {
+    0% {
+        left: 3px;
+    }
+
+    20% {
+        right: 4px;
+        transform: rotate(1deg);
+    }
+
+    40% {
+        top: 3px;
+        transform: rotate(-1deg);
+
+    }
+
+    60% {
+        bottom: 2px;
+        transform: rotate(1deg);
+    }
+
+    80% {
+        left: 3px;
+        transform: rotate(-1deg);
+    }
+
+    100% {
+        top: 2px;
+    }
+
+}
+
+#chefs {
+padding-bottom: 90px;
+}
+ .titel {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+ .titel p{
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:rgb(127,127 , 144);
+}
+ .titel h2 {
+    font-weight: 400;
+    font-size: 50px;
+    font-family: 'Amatic SC', sans-serif;
+}
+ .titel h2 span {
+    color: #E61414;
+}
+#chefs .chefs-body {
+    display: flex;
+    justify-content: space-evenly;
+}
+#chefs .chefs-item  {
+border: #0000000f solid 5px;
+border-radius: 10px;
+   width: 31%;
+/* height: 60%; */
+transition-duration: 1s;
+position: relative;
+overflow: hidden;
+
+}
+#chefs .chefs-item img {
+width: 100%;
+}
+#chefs .chefs-body .chefs-item .wave img {
+    width: 100%;
+}
+
+#chefs .chefs-body .chefs-item .wave{
+transform: translatey(-70px);
+
+
+}
+#chefs .chefs-body .chefs-item .item-info {
+    text-align: center;
+    padding-bottom: 50px;
+}
+#chefs .chefs-body .chefs-item .item-info h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    
+}
+#chefs .chefs-body .chefs-item .item-info span {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:rgb(127,127 , 144);
+    
+}
+#chefs .chefs-body .chefs-item .item-info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color:rgb(127,127 , 144);
+    font-style: italic;
+}
+.chefs-item:hover {
+    transform: scale(1.1);
+}
+#chefs .chefs-body .chefs-item .layer {
+    position: absolute;
+    width: 15%;
+    height: 30%;
+    top: 4%;
+    left: 100%;
+    background-color: rgba(128, 128, 128, 0.336);
+    text-align: center;
+    padding-block: 10px;
+    border: #0000002d solid 5px;
+    border-radius: 5px;
+    transition-duration:1s ;
+    transition-delay: 1s;
+    
+}
+#chefs .chefs-body .chefs-item .layer i {
+    display: block;
+    padding-block: 20px;
+}
+#chefs .chefs-body .chefs-item:hover .layer {
+left: 82%;
+}
+#galary {
+    background-color: #EEEEEE;
+    padding-bottom: 80px;
+}
+#galary .galary-images{
+display: flex;
+}
+
+#galary .galary-images .pizza {
+
+position: relative;
+border: 4px solid #fff;
+position: relative;
+overflow: hidden;
+
+}
+#galary .galary-images .pizza img {
+    width: 100%;
+}
+#galary .galary-images .pizza .layer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000005e;
+    text-align: center;
+    color:#fff;
+    padding-top: 100px;
+    overflow: hidden;
+    transition: all 1s;
+    
+}
+#galary .galary-images .pizza .layer h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    
+}
+#galary .galary-images .pizza .layer p {
+    padding-block: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#galary .galary-images .pizza:hover .layer {
+    top: 0;
+}
+
+
+
+#galary .galary-images .Levitation-pizza {
+  
+    position: relative;
+    border: 4px solid #fff;
+    position: relative;
+    overflow: hidden;
+    }
+    #galary .galary-images .Levitation-pizza img {
+        width: 100%;
+    }
+    #galary .galary-images .Levitation-pizza .layer {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #0000005e;
+        text-align: center;
+        color:#fff;
+        padding-top: 50%;
+        overflow: hidden;
+        transition: all 1s;
+    
+    }
+    #galary .galary-images .Levitation-pizza .layer h2 {
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        
+    }
+    #galary .galary-images .Levitation-pizza .layer p {
+        padding-block: 10px;
+        font-family: 'Inter', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+    }
+    
+    #galary .galary-images .Levitation-pizza:hover .layer {
+        top: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+    
+    #galary .galary-images .Beef-steaks {
+        
+        position: relative;
+        border: 4px solid #fff;
+        position: relative;
+        overflow: hidden;
+        }
+        #galary .galary-images .Beef-steaks img {
+            width: 100%;
+        }
+        #galary .galary-images .Beef-steaks .layer {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0000005e;
+            text-align: center;
+            color:#fff;
+            padding-top: 50%;
+            overflow: hidden;
+            transition: all 1s;
+        }
+
+
+
+
+
+        #galary .galary-images .Beef-steaks .layer h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 24px;
+            
+        }
+        #galary .galary-images .Beef-steaks .layer p {
+            padding-block: 10px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }
+        
+        #galary .galary-images .Beef-steaks:hover .layer {
+            top: 0;
+        }
+
+
+        #galary .galary-images .Frittata {
+           
+            position: relative;
+            border: 4px solid #fff;
+            position: relative;
+            overflow: hidden;
+            }
+            #galary .galary-images .Frittata img {
+                width: 100%;
+            }
+            #galary .galary-images .Frittata .layer {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: #0000005e;
+                text-align: center;
+                color:#fff;
+                padding-top: 50%;
+                transition: all 1s;
+            }
+
+            #galary .galary-images .Frittata .layer h2 {
+                font-family: 'Inter', sans-serif;
+                font-weight: 700;
+                font-size: 24px;
+                
+            }
+            #galary .galary-images .Frittata .layer p {
+                padding-block: 10px;
+                font-family: 'Inter', sans-serif;
+                font-weight: 400;
+                font-size: 14px;
+            }
+            
+            #galary .galary-images .Frittata:hover .layer {
+                top: 0;
+            }
+
+
+
+
+
+
+
+
+
+            #galary .galary-images .Burger {
+             
+                position: relative;
+                border: 4px solid #fff;
+                position: relative;
+                overflow: hidden;
+                }
+                #galary .galary-images .Burger img {
+                    width: 100%;
+                }
+                #galary .galary-images .Burger .layer {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #0000005e;
+                    text-align: center;
+                    color:#fff;
+                    padding-top: 90px;
+                    transition: all 1s ;
+                }
+
+
+                #galary .galary-images .Burger .layer h2 {
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 700;
+                    font-size: 24px;
+                    
+                }
+                #galary .galary-images .Burger .layer p {
+                    padding-block: 10px;
+                    font-family: 'Inter', sans-serif;
+                    font-weight: 400;
+                    font-size: 14px;
+                }
+                
+                #galary .galary-images .Burger:hover .layer {
+                    top: 0;
+                }
+
+
+
+
+
+
+
+
+                #galary .galary-images .Crispy-Fried-Chicken {
+                   
+                    position: relative;
+                    border: 4px solid #fff;
+                    position: relative;
+                    overflow: hidden;
+                    }
+                    #galary .galary-images .Crispy-Fried-Chicken img {
+                        width: 100%;
+                    }
+                    #galary .galary-images .Crispy-Fried-Chicken .layer {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                        background-color: #0000005e;
+                        text-align: center;
+                        color:#fff;
+                        padding-top: 90px;
+                        transition: all 1s;
+                    }
+
+                    #galary .galary-images .Crispy-Fried-Chicken .layer h2 {
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 700;
+                        font-size: 24px;
+                        
+                    }
+                    #galary .galary-images .Crispy-Fried-Chicken .layer p {
+                        padding-block: 10px;
+                        font-family: 'Inter', sans-serif;
+                        font-weight: 400;
+                        font-size: 14px;
+                    }
+                    
+                    #galary .galary-images .Crispy-Fried-Chicken:hover .layer {
+                        top: 0;
+                    }
+
+
+
+
+
+
+
+
+
+
+
+
+                    #galary .galary-images .Lyulya-kebab {
+                       
+                        position: relative;
+                            border: 4px solid #fff;
+                            position: relative;
+                            overflow: hidden;
+                        }
+                        #galary .galary-images .Lyulya-kebab img {
+                            width: 100%;
+                        }
+                        #galary .galary-images .Lyulya-kebab .layer {
+                            position: absolute;
+                            top: 100%;
+                            left: 0;
+                            width: 100%;
+                            height: 100%;
+                            background-color: #0000005e;
+                            text-align: center;
+                            color:#fff;
+                            padding-top: 50%;
+                            transition: all 1s;
+                        }
+
+                        #galary .galary-images .Lyulya-kebab .layer h2 {
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 700;
+                            font-size: 24px;
+                            
+                        }
+                        #galary .galary-images .Lyulya-kebab .layer p {
+                            padding-block: 10px;
+                            font-family: 'Inter', sans-serif;
+                            font-weight: 400;
+                            font-size: 14px;
+                        }
+                        
+                        #galary .galary-images .Lyulya-kebab:hover .layer {
+                            top: 0;
+                        }
+
+#cantact {
+    padding-bottom: 80px;
+}
+#cantact iframe {
+    width: 100%;
+    height: 50%;
+    padding-block: 20px;
+}
+
+#cantact .info {
+    display: flex;
+}
+#cantact .info1 {
+    width: 50%;
+    
+}
+#cantact .info p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#cantact .info1 .info1-1{
+    display: flex;
+    background-color: #EEEEEE;
+    padding: 20px 50px;
+    margin: 10px ;
+    text-align: left;
+
+}
+#cantact .info1 .info1-1 .icon {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+#cantact .info1 .info1-1 .data h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color:#7D7D7D;
+}
+#cantact .info2 {
+    width: 50%;
+}
+
+#cantact .info2 .info2-2{
+    display: flex;
+    background-color: #EEEEEE;
+    padding: 20px 50px;
+    margin: 10px ;
+    text-align: left;
+
+}
+#cantact .info2 .info2-2 .icon {
+    padding-top: 20px;
+    padding-right: 20px;
+}
+#cantact .info2 .info2-2 .data h3 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color:#7D7D7D;
+}
+#cantact .info2 .info2-2 .data span {
+    font-weight: 700;
+    color: #000;
+}
+#cantact .form {
+    
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    background-color: #eeeeee9b;
+}
+#cantact .form input {
+    padding: 20px 0;
+    border:#00000013 solid
+    3px;
+}
+#cantact .form textarea {
+    padding: 20px 0;
+    border:#00000013 solid
+    3px;
+}
+#cantact .form .form-top {
+    display: flex;
+}
+#cantact .form .form-top  input{
+width: 50%;
+margin-right: 10px;
+margin-block: 10px;
+}
+#cantact .form .form-bottom  input{
+    width: 100%;
+    margin-block: 10px;
+    }
+
+    #cantact .form .form-bottom textarea {
+        width: 100%;
+    }
+    #cantact .form .form-button {
+        margin-top: 50px;
+padding: 15px 40px;
+color:#fff;
+background-color: #E61414;
+border-radius: 25px;
+border: #fff solid 2px;
+    }
+    #footer {
+        background-color: #000;
+       
+    }
+  
+    #footer .footer-body {
+        display: flex;
+        
+        justify-content: space-evenly;
+        padding-top: 30px;
+        width: 100%;
+        padding-bottom: 50px;
+        
+    }
+    #footer .footer-body .left {
+     
+    }
+    #footer .footer-body .left .logo {
+
+padding-bottom: 10px;
+    }
+#footer .footer-body .left .logo img {
+    width: 10%;
+   vertical-align: middle;
+   display: inline-block;
+}
+#footer .footer-body .left .logo h2 {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    color:#fff;
+}
+#footer .footer-body .left .logo span {
+    color: #E61414;
+}
+
+#footer .footer-body .left .logo p {
+    padding-block: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    
+}
+
+#footer .footer-body .left .data {
+    text-align: center;
+}
+
+
+
+#footer .footer-body .left h3 {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    border-bottom: 2px solid rgba(221, 221, 221, 0.4);
+    
+}
+
+#footer .footer-body .left .data ul {
+    padding-top: 15px;
+}
+#footer .footer-body .left .data ul li {
+    display: inline-block;
+    padding-inline: 10px;
+}
+
+
+#footer .footer-body .mideel {
+ 
+    
+}
+#footer .footer-body .mideel .middel-info h3{
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#footer .footer-body .mideel .middel-info p {
+    padding-block: 10px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+}
+#footer .footer-body .mideel .middel-info input {
+    width: 80%;
+    border:none;
+    padding: 10px 0;
+}
+#footer .footer-body .mideel .middel-info button {
+    border:none;
+    padding: 9px 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #fff;
+    background-color: #E61414;
+}
+#footer .footer-body .mideel .middel-lists {
+    padding-top: 10px;
+    
+}
+#footer .footer-body .mideel .middel-lists h3 {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#footer .footer-body .mideel .middel-lists .lists {
+   padding-top: 10px;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+
+}
+#footer .footer-body .mideel .middel-lists .lists ul li {
+    padding:5px;
+}
+#footer .right {
+
+
+}
+#footer .right h3 {
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+}
+#footer .right ul {
+    padding-top: 20px;
+}
+#footer .right li {
+    font-family: 'Inter', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+    color: #fff;
+    padding: 10px;
+}
+#footer .right li span {
+    vertical-align: middle;
+}
+#footer .right li i{
+    vertical-align: middle;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px) {
+    .container {
+        width: 95%;
+    }
+
+    .navbar .menu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar .list {
+        transform: translateX(100%);
+        position: absolute;
+        z-index: 999;
+        width: 350px;
+        height: 100vh;
+        background-color: #fff;
+        border-left: 2px solid #f1f1f1;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 400ms;
+    }
+
+
+    .navbar .list li {
+        padding: 20px 20px;
+        color: #989393;
+    }
+
+    #home {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #home .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-block: 140px 25px;
+
+    }
+
+    #home .container .home-caption {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home .container .but {
+        justify-content: center;
+    }
+    #home .container .but .bt2 {
+        padding-top: 15px;
+    }
+
+    #home .container .home-image {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #chefs .chefs-body {
+        flex-direction: column-reverse;
+    }
+    #chefs .chefs-item {
+        width: 100%;
+        margin-bottom: 25px;
+        outline: none;
+        border: none;
+    }
+    #galary .galary-images {
+        flex-direction: column-reverse;
+    }
+    #cantact .info .info1 {
+    width: 100%;
+        display: block;
+    }
+    #cantact .info .info2  {
+        width: 100%;
+        display: block;
+    
+    }
+
+    #contact .form .form-top input {
+        width: 100%;
+    }
+    #footer .footer-body {
+        flex-direction: column
+        
+    }
+    #footer .footer-body .left {
+        margin-bottom: 50px;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:577px) and (max-width:767px) {
+    .container {
+        width: 70%;
+    }
+    .navbar .menu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar .list {
+        transform: translateX(100%);
+        position: absolute;
+        z-index: 999;
+        width: 350px;
+        height: 100vh;
+        background-color: #fff;
+        border-left: 2px solid #f1f1f1;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 400ms;
+    }
+
+
+    .navbar .list li {
+        padding: 20px 20px;
+        color: #989393;
+    }
+
+    #home {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #home .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-block: 140px 25px;
+
+    }
+
+    #home .container .home-caption {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home .container .but {
+        justify-content: center;
+    }
+    #home .container .but .bt2 {
+        padding-top: 15px;
+    }
+
+    #home .container .home-image {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #chefs .chefs-body {
+        flex-direction: column-reverse;
+    }
+    #chefs .chefs-item {
+        width: 100%;
+        margin-bottom: 25px;
+        outline: none;
+        border: none;
+    }
+    #galary .galary-images {
+        flex-direction: column-reverse;
+    }
+    #cantact .info .info1 {
+    width: 100%;
+        display: block;
+    }
+    #cantact .info .info2  {
+        width: 100%;
+        display: block;
+    
+    }
+
+    #contact .form .form-top input {
+        width: 100%;
+    }
+    #footer .footer-body {
+        flex-direction: column
+        
+    }
+    #footer .footer-body .left {
+        margin-bottom: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .container {
+        width: 720px;
+    }
+    .navbar .menu {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    .navbar .list {
+        transform: translateX(100%);
+        position: absolute;
+        z-index: 999;
+        width: 350px;
+        height: 100vh;
+        background-color: #fff;
+        border-left: 2px solid #f1f1f1;
+        right: 0;
+        top: 0;
+        flex-direction: column;
+        align-items: flex-start;
+        transition: all 400ms;
+    }
+
+
+    .navbar .list li {
+        padding: 20px 20px;
+        color: #989393;
+    }
+
+    #home {
+        height: auto;
+        display: flex;
+        align-items: center;
+    }
+
+    #home .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-block: 140px 25px;
+
+    }
+
+    #home .container .home-caption {
+        width: 100%;
+        text-align: center;
+    }
+
+    #home .container .but {
+        justify-content: center;
+    }
+    #home .container .but .bt2 {
+        padding-top: 15px;
+    }
+
+    #home .container .home-image {
+        width: 100%;
+        padding-bottom: 30px;
+    }
+    #chefs .chefs-body {
+        flex-direction: column-reverse;
+    }
+    #chefs .chefs-item {
+        width: 100%;
+        margin-bottom: 25px;
+        outline: none;
+        border: none;
+    }
+    #galary .galary-images {
+        flex-direction: column-reverse;
+    }
+    #cantact .info .info1 {
+    width: 100%;
+        display: block;
+    }
+    #cantact .info .info2  {
+        width: 100%;
+        display: block;
+    
+    }
+
+    #contact .form .form-top input {
+        width: 100%;
+    }
+    #footer .footer-body {
+        flex-direction: column
+        
+    }
+    #footer .footer-body .left {
+        margin-bottom: 50px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .container {
+       width: 960px;
+   }
+   
+}
+
+@media screen and (min-width:1200px) {
+    .container {
+       width: 1140px;
+   }
+}
